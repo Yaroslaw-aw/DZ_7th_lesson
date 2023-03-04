@@ -15,8 +15,18 @@ namespace DZ_7th_lesson
         static void Main(string[] args)
         {
             int[,] dz_array;
+            
+            int m = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
-            int result;
+            if (m > dz_array.GetLength(0) || n > dz_array.GetLength(1))
+            {
+                Console.WriteLine("Такого числа в массиве нет");
+            }
+            else
+            {
+                Console.WriteLine(dz_array[m-1, n-1]);
+            }
         }
     }
 }
