@@ -13,7 +13,7 @@ namespace DZ_7th_lesson
     {
         static void Main(string[] args)
         {
-            int m = new Random().Next(3,5);
+            int m = new Random().Next(3, 5);
             int n = new Random().Next(3, 5);
 
             int[,] dz_array = Fill_Array(m, n);
