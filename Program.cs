@@ -19,7 +19,7 @@ namespace DZ_7th_lesson
             int m = int.Parse(Console.ReadLine());
             int n = int.Parse(Console.ReadLine());
 
-            if (m > dz_array.GetLength(0) || n > dz_array.GetLength(1))
+            if (m >= dz_array.GetLength(0) || n >= dz_array.GetLength(1))
             {
                 Console.WriteLine("Такого числа в массиве нет");
             }
