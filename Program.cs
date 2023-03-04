@@ -26,16 +26,16 @@ namespace DZ_7th_lesson
                 double average = 0;
                 double sum = 0;
 
-                for (int i = 0; i < _array.GetLength(0); i++)
+                for (int i = 0; i < _array.GetLength(1); i++)
                 {
                     sum = 0;
 
-                    for (int j = 0; j < _array.GetLength(1); j++)
+                    for (int j = 0; j < _array.GetLength(0); j++)
                     {
                         sum += _array[j, i];                        
                     }
                     average = sum / _array.GetLength(0);
-                    Console.Write(average + " ");
+                    Console.Write(Math.Round(average, 2) + " ");
                 }
             }
 
